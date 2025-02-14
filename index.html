@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valentine's Day Surprise for Mai</title>
+  <title>Valentine's Day Gift</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
       background-color: #ffebee;
-      color: #d32f2f;
+      color: black;
       padding: 20px;
     }
     h1 {
       font-size: 3em;
+      color: #d32f2f;
       margin-bottom: 10px;
     }
     p {
@@ -23,15 +24,15 @@
     audio {
       margin-bottom: 20px;
     }
-    .heart {
-      font-size: 5em;
-      color: #d32f2f;
-      animation: pulse 1s infinite;
+    .image-container img {
+      max-width: 300px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      animation: spin 2s linear infinite;
     }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
   </style>
 </head>
@@ -40,7 +41,7 @@
   <p>你也一定猜到我會給你什麼，因為這是我的債</p>
   <p>即使是個債，但也是我給你的小驚喜 :3</p>
   <audio controls>
-    <source src="blue.mp3" type="audio/mpeg">
+    <source src="Blue.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   <p>其實我也沒什麼事可說的，也沒什麼好寫的</p>
@@ -49,7 +50,9 @@
   <p>有了你之後，我的生活變得更有趣 (面對小孩 :p)</p>
   <p>所以這是我的小驚喜，希望你喜歡</p>
   <p>謝謝你，再祝你情人節快樂，我愛你寶貝</p>
-  <div class="heart">❤️</div>
+  <div class="image-container">
+    <img src="image.png" alt="Special Valentine Image">
+  </div>
   <p>你亲爱的小恐龍, 企業貓，糊塗塌客<p>
   </p>黃楊棋</p>
 </body>
